@@ -1,7 +1,9 @@
 {
-  "name": "sitespeed.io",
-  "bin": "./bin/sitespeed.js",
-  "version": "4.0.0-alpha.5",
+  "name": "gome-sitespeed.io",
+  "bin": {
+    "gome-sitespeed": "./bin/sitespeed.js"
+  },
+  "version": "1.0.0",
   "description": "Analyze the web performance of your site",
   "keywords": [
     "performance",
@@ -93,7 +95,7 @@
     "png-crop": "0.0.1",
     "pug": "^2.0.0-beta4",
     "simplecrawler": "0.7.0",
-    "webcoach": "0.24.2",
+    "webcoach-zh": "0.1.0",
     "webpagetest": "0.3.4",
     "yargs": "4.8.1"
   }
