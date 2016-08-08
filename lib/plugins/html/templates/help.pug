@@ -3,17 +3,17 @@ extends ./layout.pug
 block content
 
     h2(id='overallScore') 总体分数
-    p 平均组合性能表现, 是 Coach中综合可及性与最佳实践的分数. 如果该分数为100表示完美，不需要再进行修改。
+    p 平均组合性能表现, 是 Coach中综合可用性与最佳实践的分数. 如果该分数为100表示完美，不需要再进行修改。
 
     h2(id='performanceScore') 性能分数
     p coach计算页面与性能最佳实践的接近程度 查看全部&nbsp;
       a(href='#performanceAdvice') 建议列表
       | .
 
-    h2(id='accessibilityScore') 可及性分数
+    h2(id='accessibilityScore') 可用性分数
     p 确保所有人可以进入并使用你的站点. 参考以下链接了解更多&nbsp;
       a(href='https://github.com/sitespeedio/coach/issues/new') help out&nbsp;
-      | . 通过以下链接了解如何提高可及性&nbsp;
+      | . 通过以下链接了解如何提高可用性&nbsp;
       a(href='https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/') here
       | .
 
@@ -32,7 +32,7 @@ block content
       h5(id=adviceKey) #{advice.title} (#{adviceKey})
       p #{advice.description}
 
-    h2(id='accessibilityAdvice') 可及性建议
+    h2(id='accessibilityAdvice') 可用性建议
     each advice, adviceKey in coach.data.coach.pageSummary.advice.accessibility.adviceList
       h5(id=adviceKey) #{advice.title} (#{adviceKey})
       p #{advice.description}

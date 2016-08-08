@@ -3,14 +3,14 @@ include ../../_tableMixins
 mixin adviceInfo(name, perfectScore, node)
   h3 #{name} (#{node.score})
   if node.score < 100
-    button.hidden-small.button.button--primary(onclick='toggleRow(this);') Show/hide details
+    button.hidden-small.button.button--primary(onclick='toggleRow(this);') 显示/隐藏 详情
     .responsive
       table
         thead
           tr
-            th Title
-            th Advice
-            th Score
+            th 标题
+            th 建议
+            th 分数
         tbody
           each advice, adviceName in node.adviceList
             if advice.score < 100
@@ -31,7 +31,7 @@ mixin adviceInfo(name, perfectScore, node)
 
 a
 h2 Coach
-p.small The coach helps you find performance problems on your web page using web performance best practice rules. And gives you advice on accessibility and best practices.
+p.small coach按照页面最佳实践规则帮助你找到页面性能问题. 并给予你关于可用性和最佳实践的建议。
 
 script(type='text/javascript').
   function toggleRow(toggleElement) {
@@ -64,25 +64,25 @@ script(type='text/javascript').
         +adviceInfo('Best practice advice','Your best practice score is perfect!', advice.bestpractice)
 
         a#info
-        h2 Page info
+        h2 页面信息
         table
             tr
-              td Title
+              td 标题
               td #{advice.info.documentTitle}
             tr
-              td Width
+              td 宽度
               td.number #{advice.info.documentWidth}
             tr
-              td Height
+              td 高度
               td.number #{advice.info.documentHeight}
             tr
-              td DOM elements
+              td DOM元素
               td.number #{advice.info.domElements}
             tr
-              td Avg DOMdepth
+              td 平均DOM深度
               td.number #{advice.info.domDepth.avg}
             tr
-              td Max DOM depth
+              td 最大DOM深度
               td.number #{advice.info.domDepth.max}
             tr
               td Iframes
