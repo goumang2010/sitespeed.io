@@ -3,8 +3,8 @@
   "bin": {
     "gome-sitespeed": "./bin/sitespeed.js"
   },
-  "version": "1.0.0",
-  "description": "Analyze the web performance of your site",
+  "version": "1.0.1",
+  "description": "Analyze the web performance of your site,this not official version",
   "keywords": [
     "performance",
     "web",
