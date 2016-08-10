@@ -1,22 +1,22 @@
-# gome-sitespeed.io
+ï»¿# gome-sitespeed.io
 
 
-Ô­ÏîÄ¿²Î¼û£º
+åŸé¡¹ç›®å‚è§ï¼š
 
 [Website](https://www.sitespeed.io) | [Documentation](https://www.sitespeed.io/documentation/) | [Twitter](https://twitter.com/SiteSpeedio)
 
-¸Ã°æ±¾»ùÓÚsitespeed.ioµÄ¿ª·¢°æ±¾(v4.x)£¬sitespeed.ioµÄ¿ª·¢°æ±¾·ÅÆúÁËyslow²¢²ÉÓÃcoach£¬²»ĞèÒªjavaÒÀÀµºÍä¯ÀÀÆ÷Ç°ÖÃ´úÀí£¬ËÙ¶È¸ü¿ì¡£
+è¯¥ç‰ˆæœ¬åŸºäºsitespeed.ioçš„å¼€å‘ç‰ˆæœ¬(v4.x)ï¼Œsitespeed.ioçš„å¼€å‘ç‰ˆæœ¬æ”¾å¼ƒäº†yslowå¹¶é‡‡ç”¨coachï¼Œä¸éœ€è¦javaä¾èµ–å’Œæµè§ˆå™¨å‰ç½®ä»£ç†ï¼Œé€Ÿåº¦æ›´å¿«ã€‚
 
-### Ô´Âë·ÖÎö
-#### Èë¿ÚÎÄ¼ş./bin/sitespeed.js
-Í¨¹ı../lib/support/cli.js½ÓÊÜÃüÁîĞĞ´«µİµÄ²ÎÊı£¬cli.jsÊ¹ÓÃyargs¶Ô²ÎÊı´¦Àí£¬²¢µ¼³öoptions£¬options´«Èë../lib/support/pluginLoader.jsµÄparsePluginNames·½·¨£¬´¦ÀíºóµÃµ½ËùÓĞÊ¹ÓÃµÄ²å¼şÃû³Æ£¬×îºóÊ¹ÓÃ../lib/sitespeed.jsµÄ·½·¨£¬´«Èë²å¼şÃû³ÆºÍcliµÄoptions½øĞĞ×îºó´¦Àí¡£
+### æºç åˆ†æ
+#### å…¥å£æ–‡ä»¶./bin/sitespeed.js
+é€šè¿‡../lib/support/cli.jsæ¥å—å‘½ä»¤è¡Œä¼ é€’çš„å‚æ•°ï¼Œcli.jsä½¿ç”¨yargså¯¹å‚æ•°å¤„ç†ï¼Œå¹¶å¯¼å‡ºoptionsï¼Œoptionsä¼ å…¥../lib/support/pluginLoader.jsçš„parsePluginNamesæ–¹æ³•ï¼Œå¤„ç†åå¾—åˆ°æ‰€æœ‰ä½¿ç”¨çš„æ’ä»¶åç§°ï¼Œæœ€åä½¿ç”¨../lib/sitespeed.jsçš„æ–¹æ³•ï¼Œä¼ å…¥æ’ä»¶åç§°å’Œcliçš„optionsè¿›è¡Œæœ€åå¤„ç†ã€‚
 #### ./lib/sitespeed.js
-µ¼³örun(pluginNames, options){},¸Ã·½·¨Ê×ÏÈ½¨Á¢Ïà¹Ø´æ´¢Ä¿Â¼£¬È»ºóµ÷ÓÃ./support/pluginLoader.jsÖĞµÄloadPlugins·½·¨£¬¸Ã·½·¨´«Èë²å¼şÃû£¬µ¼³örequire¸÷¸ö²å¼şºóµÄÄ£¿é¶ÔÏó£¬µ÷ÓÃrunOptionalFunction·½·¨£¬Ö´ĞĞ¸÷¸öÄ£¿é¶¨ÒåµÄopen£¬postOpen(Èç¹û´æÔÚ)£¬ÔÙ´«Èë./support/queueHandler.js´¦Àí£¬¶ÔÄ£¿é½øĞĞ¶ÓÁĞ¹ÜÀí£¬µ÷ÓÃÄ£¿éµÄprocessMessage·½·¨£¬³öÏÖ´íÎó»áµ÷ÓÃclose·½·¨¡£
+å¯¼å‡ºrun(pluginNames, options){},è¯¥æ–¹æ³•é¦–å…ˆå»ºç«‹ç›¸å…³å­˜å‚¨ç›®å½•ï¼Œç„¶åè°ƒç”¨./support/pluginLoader.jsä¸­çš„loadPluginsæ–¹æ³•ï¼Œè¯¥æ–¹æ³•ä¼ å…¥æ’ä»¶åï¼Œå¯¼å‡ºrequireå„ä¸ªæ’ä»¶åçš„æ¨¡å—å¯¹è±¡ï¼Œè°ƒç”¨runOptionalFunctionæ–¹æ³•ï¼Œæ‰§è¡Œå„ä¸ªæ¨¡å—å®šä¹‰çš„openï¼ŒpostOpen(å¦‚æœå­˜åœ¨)ï¼Œå†ä¼ å…¥./support/queueHandler.jså¤„ç†ï¼Œå¯¹æ¨¡å—è¿›è¡Œé˜Ÿåˆ—ç®¡ç†ï¼Œè°ƒç”¨æ¨¡å—çš„processMessageæ–¹æ³•ï¼Œå‡ºç°é”™è¯¯ä¼šè°ƒç”¨closeæ–¹æ³•ã€‚
 #### ./support/queueHandler.js
-¹¹ÔìQueueHandlerÀà£¬¸ÃÀà¹¹ÔìÆ÷´«ÈëpluginsÄ£¿éÊı×éºÍÓÃ»§ÊäÈëµÄ²ÎÊıoptions£¬²¢µ÷ÓÃcreateQueues¹¹ÔìÖ´ĞĞ¶ÓÁĞ¡£run·½·¨´«Èëurl-source.js¹¹½¨µÄ¶ÔÏó£¬²¢Ö´ĞĞfindUrls·½·¨£¬¸Ã·½·¨»áÖ´ĞĞqueueHandler.jsÖĞµÄpostMessage·½·¨£¬²¢´«Èë²ÎÊı{type='url',...},Õâ»Øµ¼ÖÂ¶ÓÁĞÃ¿¸ö²å¼şµÄ²ÎÊı¶¼Îª'url'£¬µ±Ö®ºóµÄstartProcessingQueuesÊ±´«ÈëÁË´¦Àíº¯Êıplugin.processMessage(message, this)ºó£¬»áÖ´ĞĞ×ÔÉíµÄprocessMessage({type:'url,...}',this)¡£ÔÙËùÓĞ²å¼ş¶¼Ö´ĞĞÍê±Ïºó£¬ÓÖÒ»´Îµ÷ÓÃprocessMessage£¬Õâ»á´«Èë{type:'summarize',...}½øĞĞ½á¹ûÊä³ö¡£
-#### ²å¼ş
-./lib/support/pluginLoader.js¶¨ÒåµÄÄ¬ÈÏ²å¼şÎª'browsertime', 'coach', 'domains', 'assets', 'html', 'analysisStorer','screenshot'£¬ÕâĞ©²å¼ş±»queueHandler.jsÖĞµÄ¶ÓÁĞ¿ØÖÆ£¬°´Ë³Ğò¼ÓÔØµ÷ÓÃ¡£
+æ„é€ QueueHandlerç±»ï¼Œè¯¥ç±»æ„é€ å™¨ä¼ å…¥pluginsæ¨¡å—æ•°ç»„å’Œç”¨æˆ·è¾“å…¥çš„å‚æ•°optionsï¼Œå¹¶è°ƒç”¨createQueuesæ„é€ æ‰§è¡Œé˜Ÿåˆ—ã€‚runæ–¹æ³•ä¼ å…¥url-source.jsæ„å»ºçš„å¯¹è±¡ï¼Œå¹¶æ‰§è¡ŒfindUrlsæ–¹æ³•ï¼Œè¯¥æ–¹æ³•ä¼šæ‰§è¡ŒqueueHandler.jsä¸­çš„postMessageæ–¹æ³•ï¼Œå¹¶ä¼ å…¥å‚æ•°{type='url',...},è¿™å›å¯¼è‡´é˜Ÿåˆ—æ¯ä¸ªæ’ä»¶çš„å‚æ•°éƒ½ä¸º'url'ï¼Œå½“ä¹‹åçš„startProcessingQueuesæ—¶ä¼ å…¥äº†å¤„ç†å‡½æ•°plugin.processMessage(message, this)åï¼Œä¼šæ‰§è¡Œè‡ªèº«çš„processMessage({type:'url,...}',this)ã€‚å†æ‰€æœ‰æ’ä»¶éƒ½æ‰§è¡Œå®Œæ¯•åï¼Œåˆä¸€æ¬¡è°ƒç”¨processMessageï¼Œè¿™ä¼šä¼ å…¥{type:'summarize',...}è¿›è¡Œç»“æœè¾“å‡ºã€‚
+#### æ’ä»¶
+./lib/support/pluginLoader.jså®šä¹‰çš„é»˜è®¤æ’ä»¶ä¸º'browsertime', 'coach', 'domains', 'assets', 'html', 'analysisStorer','screenshot'ï¼Œè¿™äº›æ’ä»¶è¢«queueHandler.jsä¸­çš„é˜Ÿåˆ—æ§åˆ¶ï¼ŒæŒ‰é¡ºåºåŠ è½½è°ƒç”¨ã€‚
 ##### browsertime
-ÔÚµ÷ÓÃprocessMessage({type:'url,...}',this)Ê±£¬»áÏÈÍ¨¹ıanalyzer.jsµÄanalyzeUrl·½·¨¶Ôurl½øĞĞ·ÖÎö£¬¸Ã·½·¨ÊÇÖ´ĞĞÖ÷Ìå£¬ÆäÖĞÍ¬Ê±µ÷ÓÃbrowsertimeºÍcoachÄ£¿é£¬µÃµ½½á¹ûºóÍ¨¹ı¶ÓÁĞµÄpostMessage½ø¶øµ÷ÓÃ²å¼şprocessMessageµÄtype²ÎÊıÇé¿öÅĞ¶Ïº¬ÓĞ'browsertime.run'£¬'browsertime.pageSummary'£¬'browsertime.har'£¬'browsertime.screenshot'µÄ²å¼şµÄÏàÓ¦·½·¨¡£ÕâĞ©Çé¿ö¶¼ÔÚhtml²å¼şµ±ÖĞ£¬¼´°Ñ½á¹ûÊä³ö¸øhtml¡£×¢Òâbrowsertime.har»¹»á´¥·¢domainsºÍcoachÏàÓ¦µÄprocessMessage·½·¨¡£
+åœ¨è°ƒç”¨processMessage({type:'url,...}',this)æ—¶ï¼Œä¼šå…ˆé€šè¿‡analyzer.jsçš„analyzeUrlæ–¹æ³•å¯¹urlè¿›è¡Œåˆ†æï¼Œè¯¥æ–¹æ³•æ˜¯æ‰§è¡Œä¸»ä½“ï¼Œå…¶ä¸­åŒæ—¶è°ƒç”¨browsertimeå’Œcoachæ¨¡å—ï¼Œå¾—åˆ°ç»“æœåé€šè¿‡é˜Ÿåˆ—çš„postMessageè¿›è€Œè°ƒç”¨æ’ä»¶processMessageçš„typeå‚æ•°æƒ…å†µåˆ¤æ–­å«æœ‰'browsertime.run'ï¼Œ'browsertime.pageSummary'ï¼Œ'browsertime.har'ï¼Œ'browsertime.screenshot'çš„æ’ä»¶çš„ç›¸åº”æ–¹æ³•ã€‚è¿™äº›æƒ…å†µéƒ½åœ¨htmlæ’ä»¶å½“ä¸­ï¼Œå³æŠŠç»“æœè¾“å‡ºç»™htmlã€‚æ³¨æ„browsertime.harè¿˜ä¼šè§¦å‘domainså’Œcoachç›¸åº”çš„processMessageæ–¹æ³•ã€‚
 ##### coach
-browsertimeÄ¬ÈÏ»áÍ¨¹ıÆäÖĞµÄprocessCoachOutput´¥·¢typeÎªcoach.runµÄprocessMessage·½·¨£¬¸Ã·½·¨´¥·¢html²å¼şµÄcoach.pageSummary¡£
+browsertimeé»˜è®¤ä¼šé€šè¿‡å…¶ä¸­çš„processCoachOutputè§¦å‘typeä¸ºcoach.runçš„processMessageæ–¹æ³•ï¼Œè¯¥æ–¹æ³•è§¦å‘htmlæ’ä»¶çš„coach.pageSummaryã€‚
